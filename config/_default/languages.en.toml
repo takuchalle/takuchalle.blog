@@ -1,0 +1,16 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "takuchalle.dev"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+
+["params.author"]
+name = "takuchalle"
+email = "me@takuchalle.dev"
+bio = "A software engineer based in Tokyo/Japan"
