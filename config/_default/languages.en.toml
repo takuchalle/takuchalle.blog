@@ -9,8 +9,16 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
+copyright = ""
+
+[[params.author.links]]
+bluesky = "https://bsky.app/profile/takuchalle.dev"
+
+[[params.author.links]]
+github = "https://github.com/takuchalle"
 
 ["params.author"]
 name = "takuchalle"
 email = "me@takuchalle.dev"
 bio = "A software engineer based in Tokyo/Japan"
+image = "author.jpg"
