@@ -1,11 +1,13 @@
 +++
 date = '2026-06-23T14:28:58+09:00'
 title = 'Omarchy をインストールした'
+categories = ["日記"]
+tags = ["Linux", "PC"]
 +++
 
 今まで開発環境は Ubuntu を使ってたんだけど違うディストロを使ってみたい欲が湧いてきて調べてたら Omarchy が気になった。
 
-{{< article link="https://omarchy.org/" showSummary=true compactSummary=true >}}
+{{< card url="https://omarchy.org" >}}
 
 Ruby on Rails の開発者である DHH が作ったディストロビューションで、Arch Linux + Hyprland をベースに予め開発用のソフトウェア群がインストールされてる。
 
