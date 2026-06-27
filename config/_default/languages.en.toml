@@ -2,11 +2,11 @@ disabled = false
 locale = "en"
 label = "English"
 weight = 1
-title = "takuchalle.blog"
+title = "takuchalle.dev"
 
 [params]
-displayName = "JA"
-isoCode = "ja"
+displayName = "EN"
+isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
 copyright = ""
