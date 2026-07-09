@@ -2,10 +2,11 @@
   "name": "takuchalle-blog",
   "compatibility_date": "2026-06-27",
   "build": {
-    "command": "hugo --minify"
+    "command": "hugo --minify",
   },
+  "workers_dev": false,
   "assets": {
     "directory": "./public",
-    "not_found_handling": "404-page"
-  }
+    "not_found_handling": "404-page",
+  },
 }
