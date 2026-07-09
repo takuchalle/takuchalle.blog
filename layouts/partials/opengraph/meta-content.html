@@ -1,0 +1,27 @@
+{{/*
+  Extracts the `content` attribute of the first <meta> tag whose `property`
+  or `name` attribute matches one of the given keys (tried in order).
+
+  Params (dict):
+    html - string, the HTML document to search
+    keys - slice of strings, meta property/name values to try, in priority order
+
+  Returns the decoded content string, or "" if none of the keys were found.
+*/}}
+{{- $html := .html -}}
+{{- $keys := .keys -}}
+{{- $value := "" -}}
+{{- range $key := $keys -}}
+  {{- if eq $value "" -}}
+    {{- $tagPattern := printf `(?is)<meta\b[^>]*?(?:property|name)\s*=\s*["']%s["'][^>]*>` $key -}}
+    {{- $tags := findRE $tagPattern $html 1 -}}
+    {{- if gt (len $tags) 0 -}}
+      {{- $tag := index $tags 0 -}}
+      {{- $extracted := replaceRE `(?is).*?content\s*=\s*["']([^"']*)["'].*` "$1" $tag -}}
+      {{- if ne $extracted $tag -}}
+        {{- $value = htmlUnescape (strings.TrimSpace $extracted) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $value -}}
