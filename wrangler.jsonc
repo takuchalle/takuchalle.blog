@@ -1,5 +1,5 @@
 {
-  "name": "blog.takuchalle.dev",
+  "name": "blog-takuchalle-dev",
   "compatibility_date": "2026-06-27",
   "build": {
     "command": "hugo --minify",
